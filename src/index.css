@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body{
+  overflow: hidden;
+}
+
+.active {
+  color: #e1af93;
+}
+
+/* .innerActive {
+  background-color: rgb(225, 175, 147, 0.1);
+  width: 100%;
+  display: block;
+} */
+
+.sliderbg {
+  background-image: url("./assets/images/hero.webp");
+}
+
+.darken {
+  box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.4);
+}
+
+.heading-1 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.heading-2 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.heading-3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 50.58px;
+}
+
+.heading-4 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.subtitle-25 {
+  font-size: 25px;
+  line-height: 36.13px;
+  font-weight: 500;
+}
+
+.subtitle-24 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.content {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+}
+
+.accent {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.68px;
+}
+
+.body-20 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.9px;
+}
+
+.body-18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.01px;
+}
+
+.btn {
+  font-size: 17px;
+  line-height: 24.57px;
+  font-weight: 600;
+}
+
+.btn-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26.01px;
+}
+
+.btn-active {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28.9px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
