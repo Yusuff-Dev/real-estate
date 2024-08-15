@@ -9,7 +9,7 @@ function Navbar() {
         <nav className='py-5 sticky top-0 z-50 bg-white/80 backdrop-blur-md'>
             <div className="container max-w-[1480px] flex items-center justify-between">
                 <Logo />
-                <ul className='navbar hidden md:flex items-center gap-[50px]'>
+                <ul className='navbar hidden md:flex items-center gap-3 lg:gap-[50px]'>
                     {
                         data.map((parent) => {
                             if (parent.children?.length) {
