@@ -4,6 +4,10 @@ import BtnBeigie from '../UI/BtnBeigie'
 import slider20 from '../assets/images/slider2.0.webp'
 import h3 from '../assets/images/h3.webp'
 import h4 from '../assets/images/h4.webp'
+import why1 from '../assets/images/why.png'
+import why2 from '../assets/images/why2.png'
+import why3 from '../assets/images/why3.png'
+import why4 from '../assets/images/why4.png'
 import CustomSlider from "../components/slider/CustomSlider";
 
 function Home() {
@@ -210,6 +214,57 @@ function Home() {
                 <p>Обработка запросов и жалоб арендаторов</p>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container max-w-[1480px]">
+          <h2 className="heading-2 font-Jost text-balck mb-[25px] sm:mb-10">
+            Почему выбирают нас
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 break-all">
+
+            <div className="w-full border border-stroke py-[35px] px-4 text-black font-Jost">
+              <h4 className="heading-4 font-Jost mb-2 sm:mb-5">Опыт и профессионализм</h4>
+              <p className="content">Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг</p>
+            </div>
+
+            <div>
+              <img src={why1} alt="" />
+            </div>
+
+            <div className="w-full border border-stroke py-[35px] px-4 text-black font-Jost">
+              <h4 className="heading-4 font-Jost mb-2 sm:mb-5">Прозрачность и доверие</h4>
+              <p className="content">Обеспечение полной прозрачности всех операций и предоставление отчетов. Работа основана на принципах честности и доверия, что подтверждается отзывами</p>
+            </div>
+
+            <div>
+              <img src={why2} alt="" />
+            </div>
+
+            <div className="w-full border border-stroke py-[35px] px-4 text-black font-Jost">
+              <h4 className="heading-4 font-Jost mb-2 sm:mb-5">Высокий уровень обслуживания</h4>
+              <p className="content">Мы всегда на связи, чтобы помочь вам в любое время</p>
+            </div>
+
+            <div>
+              <img src={why3} alt="" />
+            </div>
+
+            <div className="w-full border border-stroke py-[35px] px-4 text-black font-Jost">
+              <h4 className="heading-4 font-Jost mb-2 sm:mb-5">Индивидуальный подход</h4>
+              <p className="content">Мы разрабатываем персонализированные решения, учитывая уникальные потребности каждого клиента</p>
+            </div>
+
+            <div> 
+            <img src={why4} alt="" />
+            </div>
+
+            <div className="w-full border border-stroke py-[35px] px-4 text-black font-Jost">
+              <h4 className="heading-4 font-Jost mb-2 sm:mb-5">Комплексное обслуживание</h4>
+              <p className="content">Полный спектр услуг, включающий аренду, куплю-продажу, управление и инвестиции в недвижимость.</p>
+            </div>
           </div>
         </div>
       </section>
