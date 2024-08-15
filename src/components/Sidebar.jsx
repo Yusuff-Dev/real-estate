@@ -15,8 +15,8 @@ function Sidebar() {
   }
 
   return (
-    <div className={`${isOpen ? 'translate-x-0' : 'translate-x-full'} duration-300 sidebar md:hidden absolute top-0 right-0 w-full h-screen backdrop-blur-sm bg-black/50 flex justify-end`}>
-      <ul className='bg-white flex flex-col gap-8 h-full basis-[408px] px-5 py-[25px]'>
+    <div className={`${isOpen ? 'w-full' : 'w-0 backdrop-blur-0'} backdrop-blur-sm z-10 duration-300 md:hidden fixed top-0 right-0 h-screen bg-black/50 flex justify-end overflow-hidden ease-in-out`}>
+      <ul className={`${isOpen ? 'translate-x-0' : 'translate-x-full'} bg-white flex flex-col gap-8 h-full w-[265px] sm:w-[408px] px-5 py-[25px] duration-300 ease-in-out`}>
         <div className='flex items-center justify-end gap-2'>
           <ChangeLang />
           <div onClick={handleToggle}>
@@ -44,7 +44,7 @@ function Sidebar() {
                       {
                         parent.children.map((child) => {
                           return (
-                            <li key={child.id}
+                            <li key={child.id} onClick={handleToggle}
                               className='font-Jost body-18 text-black hover:text-beigie-100 duration-300 px-[10px]'>
                               <NavLink to={child.path}
                                 className={({ isActive }) => isActive ? "active" : ""}>
@@ -59,7 +59,7 @@ function Sidebar() {
                 </ul>)
             } else {
               return (
-                <li className='font-Jost content text-black hover:text-beigie-100 duration-300' key={parent.id}>
+                <li onClick={handleToggle} className='font-Jost content text-black hover:text-beigie-100 duration-300' key={parent.id}>
                   <NavLink to={parent.path}
                     className={({ isActive }) => isActive ? "active" : ""}>
                     {parent.title}

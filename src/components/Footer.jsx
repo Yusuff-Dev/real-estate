@@ -40,9 +40,9 @@ function Footer() {
                     </ul>
                 </div>
 
-                <div className='grid gap-9 grid-cols-2 md:grid-cols-4 py-[50px] max-w-[1043px]'>
+                <div className='grid gap-9 grid-cols-2 md:grid-cols-4 py-[50px] max-w-[1043px] break-words'>
                 <ul className='flex flex-col gap-1'>
-                    <li className='subtitle-24 text-black font-Jost mb-3'>Услуги</li>
+                    <li className='subtitle-24 text-black font-Jost mb-3 break-words'>Услуги</li>
                     <li className='content text-black font-Jost'><Link>Купить</Link></li>
                     <li className='content text-black font-Jost'><Link>Арендовать</Link></li>
                     <li className='content text-black font-Jost'><Link>Продать</Link></li>

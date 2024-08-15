@@ -6,7 +6,7 @@ import Sidebar from './Sidebar';
 
 function Navbar() {
     return (
-        <nav className='py-5'>
+        <nav className='py-5 sticky top-0 z-50 bg-white/80 backdrop-blur-md'>
             <div className="container max-w-[1480px] flex items-center justify-between">
                 <Logo />
                 <ul className='navbar hidden md:flex items-center gap-[50px]'>
@@ -34,7 +34,6 @@ function Navbar() {
                                                                     {child.title}
                                                                 </NavLink>
                                                             </li>
-
                                                         )
                                                     })
                                                 }

@@ -12,7 +12,7 @@ function Logo() {
                     <img src={logoDesk} alt="logo" />
                 </picture>
                 <div>
-                    <p className='font-Belleza text-[21.97px] font-400 leading-[25.31px] text-black uppercase'> Rmc De Luxe </p>
+                    <p className='font-Belleza text-[17.63px] sm:text-[21.97px] font-400 leading-[20.31px] sm:leading-[25.31px] text-black uppercase '> Rmc De Luxe </p>
                     <span className='label font-Bellefair text-[15.38px] leading-[17.63px] -tracking-[3%] text-[#A6A6A6] font-400'>real estate</span>
                 </div>
             </Link>

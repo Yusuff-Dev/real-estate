@@ -4,23 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body{
-  overflow: hidden;
-}
-
 .active {
   color: #e1af93;
-}
-
-/* .innerActive {
-  background-color: rgb(225, 175, 147, 0.1);
-  width: 100%;
-  display: block;
-} */
-
-.sliderbg {
-  background-image: url("./assets/images/hero.webp");
 }
 
 .darken {
@@ -114,4 +99,43 @@ body{
 .custom-select {
   position: relative;
   font-family: Arial;
+}
+
+@media screen and (max-width: 769px){
+  .heading-1{
+    font-size: 65px
+  }
+
+  .heading-2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .heading-3{
+
+  }
+
+  .heading-4{
+
+  }
+}
+
+@media screen and (max-width: 361px){
+  .heading-1{
+    font-size: 35px;
+    line-height: 41px;
+  }
+
+  .heading-2{
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .heading-3{
+
+  }
+
+  .heading-4{
+
+  }
 }
