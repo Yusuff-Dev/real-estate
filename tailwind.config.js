@@ -3,13 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'sm': {'min': '360px'},
+      'xsm': '360px',
 
-      'md': {'min': '768px'},
+      'sm': '640px',
 
-      'lg': {'min': '1024px'},
+      'md': '768px',
 
-      'fx': {'min': '1480px'}
+      'lg': '1024px',
+
+      'xl': '1280px',
     },
 
     extend: {
