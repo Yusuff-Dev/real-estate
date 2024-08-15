@@ -8,6 +8,8 @@ export default {
       'md': {'min': '768px'},
 
       'lg': {'min': '1024px'},
+
+      'fx': {'min': '1480px'}
     },
 
     extend: {

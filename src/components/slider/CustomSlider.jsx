@@ -18,7 +18,7 @@ function CustomSlider({ loop, sb, sp, children, navigationStyles }) {
                     }) : <SwiperSlide>{children}</SwiperSlide>
                  }
 
-                 <div className={`absolute z-10 ${navigationStyles} bottom-[350px] left-4 sm:left-5 sm:bottom-[75px] md:bottom-[70px] `}>
+                 <div className={`absolute z-10 ${navigationStyles} bottom-[340px] left-4 sm:left-[calc(100%-20px)] sm:-translate-x-full sm:bottom-[75px] md:bottom-[70px] fx:left-[calc(100%-240px)]`}>
                     <CustomNavigation/>
                  </div>
             </Swiper>
