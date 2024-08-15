@@ -2,6 +2,8 @@ import Tabs from "../components/Tabs/Tabs"
 import Tab from "../components/Tabs/Tab"
 import BtnBeigie from '../UI/BtnBeigie'
 import slider20 from '../assets/images/slider2.0.webp'
+import h3 from '../assets/images/h3.webp'
+import h4 from '../assets/images/h4.webp'
 import CustomSlider from "../components/slider/CustomSlider";
 
 function Home() {
@@ -30,7 +32,7 @@ function Home() {
         </CustomSlider>
       </section>
 
-      <section className="py-[250px] bg-white">
+      <section className="py-[180px] sm:py-[200px] md:py-[250px] bg-white">
         <div className="container max-w-[1480px]">
           <div className="flex flex-col md:flex-row gap-y-10 gap-5">
             <h2 className="heading-2 font-Jost text-black basis-1/2">О компании <p className="text-beigie-100">RMC DE LUXE</p></h2>
@@ -63,12 +65,48 @@ function Home() {
           <div className="mt-[35px] sm:mt-10 md:mt-[50px]">
             <CustomSlider navigationStyles={"top-[30px] left-[30px]"}>
               <div className="max-h-screen">
-                <img src={slider20} alt="slider image" className="block w-full h-auto object-cover"/>
+                <img src={slider20} alt="slider image" className="block w-full h-auto object-cover" />
               </div>
               <div className="border max-h-screen">
-                <img src={slider20} alt="slider image" className="block w-full h-auto object-cover"/>
+                <img src={slider20} alt="slider image" className="block w-full h-auto object-cover" />
               </div>
             </CustomSlider>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-blue py-[30px] sm:py-[50px] md:py-[80px]">
+        <div className="container max-w-[1480px]">
+          <div className="font-Jost text-black grid grid-cols-1 gap-4 md:grid-cols-[minmax(200px,710px)_minmax(0,487px)] md:justify-between">
+
+            <h2 className="heading-2 break-words md:-order-1 w-full">Инвестиции в недвижимость в Дубае</h2>
+
+            <div className="relative flex items-center gap-3 h-[240px] sm:[350px] md:h-auto  sm:order-1 md:-order-1 md:w-full row-span-2">
+              <div className="h-full grow">
+                <img src={h3} alt="building 3" className="block h-full object-cover w-full" />
+              </div>
+              <div className="grow h-full md:w-[227px] md:h-[285px] md:absolute -bottom-20 -left-[100px]">
+                <img src={h4} alt="building 4" className="block h-full object-cover w-full" />
+              </div>
+            </div>
+
+            <div className="content flex flex-col gap-4 z-10">
+              <p>
+                Недвижимость в Дубае предоставляет отличные возможности для получения стабильного дохода и увеличения капитала
+              </p>
+              <p>
+                Полный цикл инвестиций: От анализа рынка и подбора объектов до управления инвестициями и их реализации.
+              </p>
+              <p>
+                Наши эксперты помогут вам на всех этапах инвестиционного процесса, обеспечивая высокое качество обслуживания и надежность.
+              </p>
+              <p>
+                Наши услуги включают управление вашей инвестиционной недвижимостью, обеспечивая её сохранность и стабильный доход. Мы берем на себя все аспекты управления, включая подбор и проверку арендаторов, техническое обслуживание, финансовую отчетность и юридическую поддержку.
+              </p>
+            </div>
+          </div>
+          <div className="mt-[30px] sm:mt-[50px] md:mt-10">
+            <BtnBeigie>Подробнее</BtnBeigie>
           </div>
         </div>
       </section>
