@@ -1,16 +1,13 @@
 import { toggle } from '../store/navbar/navSlice';
 import ButtonUI from '../UI/ButtonUI'
 import ChangeLang from './ChangeLang'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 function NavBtns() {
-    const {isOpen} = useSelector(state =>state.navSlice);
     const dispatch = useDispatch();
-
     const handleToggle = ()=>{
         dispatch(toggle());
     }
-
     return (
         <div className='flex items-center gap-x-3'>
             <ButtonUI>

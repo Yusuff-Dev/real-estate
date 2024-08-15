@@ -2,24 +2,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import CustomNavigation from './CustomNavigation';
 
-function CustomSlider({ loop, sb, sp, children, r, l, t, b }) {
-    console.log(r)
+function CustomSlider({ loop, sb, sp, children, navigationStyles }) {
     return (
         <>
             <Swiper className='relative'
                 spaceBetween={sb || 0}
                 slidesPerView={sp || 1}
-                loop={loop || true}
+                loop={children.length ? true : false || loop}
             >
-                {
-                    children.map((child, index) => {
+                 {
+                    children.length ? children.map((child, index) => {
                         return (
                             <SwiperSlide key={index}>{child}</SwiperSlide>
                         )
-                    })
-                }
+                    }) : <SwiperSlide>{children}</SwiperSlide>
+                 }
 
-                <CustomNavigation r={r} l={l} t={t} b={b}/>
+                 <div className={`absolute z-10 ${navigationStyles} bottom-[350px] left-4 sm:left-5 sm:bottom-[75px] md:bottom-[70px] `}>
+                    <CustomNavigation/>
+                 </div>
             </Swiper>
         </>
     )

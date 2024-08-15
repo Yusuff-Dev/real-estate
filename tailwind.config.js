@@ -2,6 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      'sm': {'min': '360px'},
+
+      'md': {'min': '768px'},
+
+      'lg': {'min': '1024px'},
+    },
+
     extend: {
       fontFamily: {
         'Belleza': ["Belleza", "system-ui", "sans-serif"],
@@ -28,7 +36,8 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: '20px',
+        DEFAULT: '1rem',
+        'sm': '20px'
       },
     },
   },
