@@ -9,6 +9,7 @@ import why2 from '../assets/images/why2.png'
 import why3 from '../assets/images/why3.png'
 import why4 from '../assets/images/why4.png'
 import why5 from '../assets/images/why5.png'
+import forms from '../assets/images/forms.webp'
 import CustomSlider from "../components/slider/CustomSlider";
 
 function Home() {
@@ -277,7 +278,7 @@ function Home() {
       <section className="py-[180px] xsm:py-[200px] md:py-[250px]">
         <div className="container max-w-[1480px] font-Jost">
           <h2 className="heading-2 font-Jost text-black mb-[25px] md:mb-10">Рассчитайте ипотеку</h2>
-          
+
           <div className="drop-shadow-[0_30px_30px_#0F11120D] bg-white py-5 px-5 sm:flex gap-[30px]">
 
             <div className="flex flex-col gap-5 font-Jost text-black-60 content grow">
@@ -327,9 +328,9 @@ function Home() {
                   />
                 </div>
               </div>
-              
+
               <div className="mt-[30px]">
-              <BtnBeigie>Рассчитать</BtnBeigie>
+                <BtnBeigie>Рассчитать</BtnBeigie>
               </div>
             </div>
 
@@ -354,6 +355,59 @@ function Home() {
                   <p className="heading-4 text-black">28 июля 2034 г</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container max-w-[1480px]">
+          <div className="flex flex-wrap-reverse md:flex-nowrap bg-blue lg:gap-[200px]">
+
+            <div className="grow-[3] shrink-[5] py-4 px-[25px] xsm:p-10 md:p-[60px]">
+              <h2 className="heading-2 text-black font-Jost break-words mb-5 sm:mb-[30px] md:mb-[50px]">Остались вопросы? Свяжитесь с нами</h2>
+
+              <div className="flex flex-col gap-5 w-full body-18 font-Jost text-black">
+                <div className="w-full group relative">
+                  <label className="block label duration-300 absolute top-2 group-hover:-top-3">ФИО <span className="text-red">*</span></label>
+                  <input
+                    type="text"
+                    className="block border-b border-black-20 w-full outline-none bg-transparent p-2"
+                  />
+                </div>
+
+                <div className="w-full group relative">
+                  <label className="block label duration-300 absolute top-2 group-hover:-top-3">Номер телефона <span className="text-red">*</span></label>
+                  <input
+                    type="text"
+                    className="block border-b border-black-20 w-full outline-none bg-transparent p-2"
+                  />
+                </div>
+
+                <div className="w-full group relative">
+                  <label className="block label duration-300 absolute top-2 group-hover:-top-3">E-mail</label>
+                  <input
+                    type="text"
+                    className="block border-b border-black-20 w-full outline-none bg-transparent p-2"
+                  />
+                </div>
+
+                <div className="w-full group relative">
+                  <label className="block label duration-300 absolute top-2 group-hover:-top-3">Ваш вопрос</label>
+                  <input
+                    type="text"
+                    className="block border-b border-black-20 w-full outline-none bg-transparent p-2"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-[30px]">
+                <BtnBeigie>Отправить</BtnBeigie>
+              </div>
+            </div>
+
+            <div className="grow-[2] lg:shrink-[0] shrink-1">
+              <img src={forms} alt="forms image" className="block w-full h-full object-cover" />
             </div>
           </div>
         </div>
