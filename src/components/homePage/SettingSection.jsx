@@ -33,7 +33,7 @@ function SettingSection() {
     }
 
     return (
-        <div ref={ref} className={`pl-4 xsm:pl-5`}>
+        <div ref={ref} className={`pl-4 sm:pl-5`}>
             <h2 className="heading-2 font-Jost text-black mb-[25px] sm:mb-10 md:mb-[60px]">Новостройки</h2>
             <CustomSlider
                 navigationStyles={"top-[30px] left-[30px]"} sb={20} sp={perView()}
