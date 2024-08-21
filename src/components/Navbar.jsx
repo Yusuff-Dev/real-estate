@@ -16,7 +16,7 @@ function Navbar() {
                                 return (
                                     <ul key={parent.id} className='relative'>
                                         <li className='font-Jost content text-black capitalize cursor-pointer hover:text-beigie-100 group duration-300'>
-                                            <div className='flex items-center gap-[10px]'>
+                                            <div className='flex items-center gap-2'>
                                                 {parent.title}
                                                 <svg className='group-hover:-rotate-180 duration-300' width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path className='group-hover:stroke-beigie-100 duration-300' d="M1 1.5L6 6.5L11 1.5" stroke="#333333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

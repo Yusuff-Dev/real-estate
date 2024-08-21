@@ -2,13 +2,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import CustomNavigation from './CustomNavigation';
 
-function CustomSlider({ loop, sb, sp, children, navigationStyles }) {
+function CustomSlider({ loop, sb, sp, centered, children, navigationStyles }) {
     return (
         <>
             <Swiper className='relative'
                 spaceBetween={sb || 0}
                 slidesPerView={sp || 1}
                 loop={children.length ? true : false || loop}
+                centeredSlides={centered || false}
             >
                  {
                     children.length ? children.map((child, index) => {

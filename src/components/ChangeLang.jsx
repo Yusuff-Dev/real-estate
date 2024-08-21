@@ -1,7 +1,7 @@
 function ChangeLang() {
     return (
         <div className="relative">
-            <select className="border border-stroke h-10 sm:h-[50px] rounded-full outline-none px-4 font-Jost content text-black appearance-none w-20">
+            <select className="border border-stroke h-10 md:h-[50px] rounded-full outline-none px-4 font-Jost content text-black appearance-none w-20">
                 <option value="ru">Ru</option>
                 <option value="uz">Uz</option>
             </select>

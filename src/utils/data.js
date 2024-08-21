@@ -1,16 +1,9 @@
-import Home from "../pages/Home";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import Buy from "../pages/Buy";
 
 const data = [
-    {   
-        id: 1,
-        title: '',
-        path: "/",
-        element: Home,
-    },
     {
         id: 2,
         title: 'Услуги',
