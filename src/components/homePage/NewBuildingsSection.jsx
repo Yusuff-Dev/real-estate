@@ -58,7 +58,7 @@ function NewBuildingsSection() {
         <>
             <div className="flex items-center justify-between gap-2 container max-w-[1480px] mb-[25px] sm:mb-10 md:mb-[60px]">
                 <h2 className="heading-2 font-Jost text-black">Новостройки</h2>
-                <div className="xsm:flex items-center gap-2 hidden">
+                <div className="sm:flex items-center gap-2 hidden">
                     <button onClick={prev}
                         className="flex items-center justify-center w-10 h-10 sm:w-[50px] sm:h-[50px] rotate-180  rounded-full border border-black">
                         <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
