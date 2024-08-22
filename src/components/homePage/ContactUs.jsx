@@ -48,8 +48,8 @@ function ContactUs() {
               </div>
             </div>
 
-            <div className="grow-[2] lg:shrink-[1] shrink-1">
-              <img src={forms} alt="forms image" className="block w-full h-full object-cover" />
+            <div className="grow-[2] shrink-1 h-[200px] xsm:h-[370px] md:h-auto">
+              <img src={forms} alt="forms image" className="block w-full h-full object-cover object-top" />
             </div>
           </div>
         </div>

@@ -1,11 +1,12 @@
-import React from 'react'
 import Tabs from '../Tabs/Tabs'
 import Tab from '../Tabs/Tab'
-import CustomSlider from '../slider/CustomSlider'
 import slider20 from '../../assets/images/home/slider2.0.webp'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import CustomNavigation from '../slider/CustomNavigation'
 
 
 function AboutSection() {
+    const slides = Array.from({ length: 10 }, (_, index) => index + 1);
     return (
 
         <div className="container max-w-[1480px]">
@@ -37,15 +38,26 @@ function AboutSection() {
             </div>
 
             <div className="mt-[35px] sm:mt-10 md:mt-[50px]">
-                <CustomSlider navigationStyles={"top-[30px] left-[30px]"}>
-                    <div className="max-h-screen">
-                        <img src={slider20} alt="slider image" className="block w-full h-auto object-cover" />
+                <Swiper
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    loop={true}
+                    className='relative'
+                >
+                    {
+                        slides.map((item, index) => <SwiperSlide key={index}>
+                            <div className="max-h-screen">
+                                <img src={slider20} alt="slider image" className="block w-full h-auto object-cover" />
+                            </div>
+                        </SwiperSlide>)
+                    }
+
+                    <div className='absolute top-[30px] left-[30px] z-10'>
+                        <CustomNavigation />
                     </div>
-                    <div className="border max-h-screen">
-                        <img src={slider20} alt="slider image" className="block w-full h-auto object-cover" />
-                    </div>
-                </CustomSlider>
+                </Swiper>
             </div>
+
         </div>
     )
 }

@@ -6,7 +6,7 @@ import PropertyManag from '../components/homePage/PropertyManag'
 import WhyUs from '../components/homePage/WhyUs'
 import MortageSection from '../components/homePage/MortageSection'
 import ContactUs from '../components/homePage/ContactUs'
-import SettingSection from "../components/homePage/SettingSection"
+import NewBuildingsSection from "../components/homePage/NewBuildingsSection"
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
         <Hero />
       </section>
 
-       <section className="py-[180px] sm:py-[200px] md:py-[250px] bg-white">
+       <section className="py-[120px] sm:py-[150px] md:py-[200px]">
         <AboutSection/>
       </section>
 
@@ -23,7 +23,7 @@ function Home() {
         <InvestmentsSection/>
       </section>
 
-      <section className="py-[180px] sm:py-[200px] md:py-[250px]">
+      <section className="py-[120px] sm:py-[150px] md:py-[200px]">
        <PropertyManag/>
       </section>
 
@@ -31,11 +31,11 @@ function Home() {
         <WhyUs/>
       </section>
 
-      <section className="py-[180px] sm:py-[200px] md:py-[250px]">
-        <SettingSection/>
+      <section className="py-[120px] sm:py-[150px] md:py-[200px]">
+        <NewBuildingsSection/>
       </section>
 
-      <section className="py-[180px] xsm:py-[200px] md:py-[250px]">
+      <section>
         <MortageSection/>
       </section>
 
@@ -43,7 +43,7 @@ function Home() {
         <ContactUs/>
       </section>
 
-      <section className="py-[180px] xsm:py-[200px] md:py-[250px]">
+      <section className="py-[120px] sm:py-[150px] md:py-[200px]">
         <BlogSection />
       </section>
     </>
