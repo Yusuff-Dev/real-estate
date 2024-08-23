@@ -22,7 +22,7 @@ function Hero() {
             <Swiper className='relative'
                 spaceBetween={0}
                 slidesPerView={1}
-                loop={true}
+                loop={slides.length > 1}
                 onSwiper={(s) => {
                     setSwiper(s);
                 }}

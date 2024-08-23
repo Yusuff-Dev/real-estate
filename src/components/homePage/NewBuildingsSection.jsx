@@ -78,7 +78,7 @@ function NewBuildingsSection() {
                 <Swiper
                     spaceBetween={20}
                     slidesPerView={perView}
-                    loop={slideItems.length > (perView + 1)}
+                    loop={slideItems.length > (perView + 2)}
                     onSwiper={(s) => setSwiper(s)}
                 >
                     {
