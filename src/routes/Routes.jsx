@@ -8,6 +8,7 @@ import Buy from "../pages/Buy";
 import Rent from "../pages/Rent";
 import Rating from "../pages/Rating";
 import Sell from "../pages/Sell";
+import Blogs from "../pages/Blogs";
 
 
 // const flattenRoutes = (routes) => {
@@ -45,7 +46,12 @@ export const router = createBrowserRouter([
         errorElement: <h2>not found page</h2>
     },
     {
-        path: '/blog',
+        path: '/blogs',
+        element: <Layout><Blogs/></Layout>,
+        errorElement: <h2>not found page</h2>
+    },
+    {
+        path: '/blogs/:blogId',
         element: <Layout><Blog/></Layout>,
         errorElement: <h2>not found page</h2>
     },

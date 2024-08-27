@@ -48,7 +48,7 @@ function PaginationComponent({
                     className="px-5 py-3 disabled:opacity-50"
                 >
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 11L1 6L6 1" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6 11L1 6L6 1" stroke="#333333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
                 </button>

@@ -1,18 +1,6 @@
 import { useState } from 'react'
 import data from '../../utils/aboutData'
-
-const MoreDetails = <div>
-    <button className={`flex items-center gap-1 text-[14px] sm:text-[20px] text-beigie-100 font-semibold`}>
-        Подробнее
-        <svg className='hidden sm:block' width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path className={`stroke-beigie-100`} d="M8.46875 1.375L14.0937 7L8.46875 12.625M13.3125 7L1.90625 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-
-        <svg className='sm:hidden' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path className='stroke-beigie-100' d="M6.375 1.5L10.875 6L6.375 10.5M10.25 6L1.125 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    </button>
-</div>
+import { Link } from 'react-router-dom';
 
 function PopularArticles() {
     const [items, setItems] = useState(data);
@@ -45,8 +33,19 @@ function PopularArticles() {
                                     </div>
 
                                     <div>
-                                        <h3 className={`text-[20px] leading-[26px] font-semibold sm:text-[22px] sm:leading-[30px] md:font-[25px] md:leading-[36.13px] mb-1 sm:mb-[10px] ${item.isActive ? 'sm:font-bold sm:text-[30px] sm:leading-[43.35px] md:text-[35px] md:leading-[50.58px]':""}`}>{item.title}</h3>
-                                        {MoreDetails}
+                                        <h3 className={`text-[20px] leading-[26px] font-semibold sm:text-[22px] sm:leading-[30px] md:font-[25px] md:leading-[36.13px] mb-1 sm:mb-[10px] ${item.isActive ? 'sm:font-bold sm:text-[30px] sm:leading-[43.35px] md:text-[35px] md:leading-[50.58px]' : ""}`}>{item.title}</h3>
+
+                                        <Link to={`${item.id}`} className={`flex items-center gap-1 text-[14px] sm:text-[20px] text-beigie-100 font-semibold`}>
+                                            Подробнее
+                                            <svg className='hidden sm:block' width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path className={`stroke-beigie-100`} d="M8.46875 1.375L14.0937 7L8.46875 12.625M13.3125 7L1.90625 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+
+                                            <svg className='sm:hidden' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path className='stroke-beigie-100' d="M6.375 1.5L10.875 6L6.375 10.5M10.25 6L1.125 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </Link>
+
                                     </div>
                                 </div>
                             </div>

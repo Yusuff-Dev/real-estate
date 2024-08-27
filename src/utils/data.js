@@ -44,7 +44,7 @@ const data = [
     {
         id: 4,
         title: "Блог",
-        path: "/blog",
+        path: "/blogs",
         element: Blog
     },
     {
