@@ -1,3 +1,4 @@
+import Articles from "../components/aboutPage/Articles"
 import PopularArticles from "../components/aboutPage/PopularArticles"
 
 function About() {
@@ -5,6 +6,9 @@ function About() {
     <>
     <section>
       <PopularArticles/>
+    </section>
+    <section className="py-[120px] sm:py-[150px] md:py-[200px]">
+      <Articles/>
     </section>
     </>
   )
