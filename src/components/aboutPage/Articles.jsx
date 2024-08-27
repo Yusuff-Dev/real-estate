@@ -1,10 +1,15 @@
 import { useState } from "react";
 import data from "../../utils/aboutData";
-import MoreDetails from "../../UI/MoreDetails";
+import PaginationComponent from "../PaginationComponent";
 
 function Articles() {
     const [items, setItems] = useState(data);
-    const [filterBy, setFilterBy] = useState(['Все', 'О недвижимости', 'Инвесторам', 'Покупка недвижимости', 'Обзоры районов'])
+    const [filterBy, setFilterBy] = useState(['Все', 'О недвижимости', 'Инвесторам', 'Покупка недвижимости', 'Обзоры районов']);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [pageSize, setPageSize] = useState(10);
+    const totalItems = 100;
+
+    const totalPages = Math.ceil(totalItems / pageSize);
 
     if (!items || items.length === 0) return null;
 
@@ -22,7 +27,7 @@ function Articles() {
                 </div>
 
                 <div className='relative ml-auto sm:ml-0 group'>
-                    <button className='flex items-center gap-2 font-Jost content text-black capitalize hover:text-beigie-100 group duration-300 py-2'>
+                    <button className='flex items-center gap-2 font-Jost content text-black capitalize group-hover:text-beigie-100 group duration-300 py-2'>
                         Сортировать
                         <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path className='group-hover:fill-beigie-100 duration-300' d="M3.89336 3.80793L1.60132 6.09998C1.44111 6.25426 1.22678 6.33961 1.00433 6.33768C0.781465 6.33574 0.568275 6.24635 0.410678 6.08875C0.253081 5.93116 0.163688 5.71796 0.161751 5.4951C0.159818 5.27265 0.245169 5.05832 0.399455 4.89811L4.39848 0.899082C4.39849 0.899077 4.39849 0.899072 4.3985 0.899066C4.55789 0.739726 4.77405 0.650214 4.99943 0.650214C5.22481 0.650214 5.44097 0.739726 5.60036 0.899066C5.60037 0.899072 5.60038 0.899077 5.60038 0.899082L9.5994 4.89811C9.75369 5.05832 9.83904 5.27265 9.83711 5.4951C9.83517 5.71796 9.74578 5.93116 9.58818 6.08875C9.43059 6.24635 9.21739 6.33574 8.99453 6.33768C8.77207 6.33961 8.55774 6.25426 8.39752 6.09996L6.1055 3.80793L5.84943 3.55187V3.914V15.5C5.84943 15.7254 5.75988 15.9416 5.60047 16.101C5.44107 16.2604 5.22486 16.35 4.99943 16.35C4.774 16.35 4.5578 16.2604 4.39839 16.101C4.23898 15.9416 4.14943 15.7254 4.14943 15.5V3.914V3.55187L3.89336 3.80793ZM13.8934 13.1921L14.1494 13.4481V13.086V1.5C14.1494 1.27457 14.239 1.05837 14.3984 0.898959C14.5578 0.739554 14.774 0.65 14.9994 0.65C15.2249 0.65 15.4411 0.739554 15.6005 0.898959C15.7599 1.05837 15.8494 1.27457 15.8494 1.5V13.086V13.4481L16.1055 13.1921L18.3966 10.9009C18.3969 10.9006 18.3972 10.9003 18.3975 10.9C18.5578 10.7457 18.7721 10.6604 18.9945 10.6623C19.2174 10.6643 19.4306 10.7537 19.5882 10.9112C19.7458 11.0688 19.8352 11.282 19.8371 11.5049C19.839 11.7273 19.7537 11.9417 19.5994 12.1019C19.5991 12.1022 19.5988 12.1025 19.5985 12.1028L15.6004 16.1009C15.441 16.2603 15.2248 16.3498 14.9994 16.3498C14.774 16.3498 14.5579 16.2603 14.3985 16.1009L10.3995 12.1019C10.2452 11.9417 10.1598 11.7274 10.1618 11.5049C10.1637 11.282 10.2531 11.0688 10.4107 10.9112C10.5683 10.7537 10.7815 10.6643 11.0043 10.6623C11.2268 10.6604 11.4411 10.7457 11.6013 10.9L13.8934 13.1921Z" fill="#333333" stroke="white" strokeWidth="0.3" />
@@ -85,6 +90,14 @@ function Articles() {
                         )
                     })
                 }
+            </div>
+
+            <div className="mt-[60px] sm:mt-20 md:mt-[100px]">
+                <PaginationComponent totalPages={totalPages}
+                    currentPage={currentPage}
+                    onPageChange={setCurrentPage}
+                    pageSize={pageSize}
+                    setPageSize={setPageSize} />
             </div>
         </div>
     )
