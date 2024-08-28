@@ -3,7 +3,7 @@ import blog2 from '../../assets/images/home/blog2.webp'
 import blog3 from '../../assets/images/home/blog3.webp'
 import BtnBeigie from '../../UI/BtnBeigie'
 
-function BlogSection() {
+function BlogSection({title}) {
   const data = [
     {
       id: 1,
@@ -38,7 +38,7 @@ function BlogSection() {
   return (
     <>
       <div className='container max-w-[1480px]'>
-        <h1 className='text-black heading-2 font-Jost mb-[30px]'>Блог</h1>
+        <h2 className='text-black heading-2 font-Jost mb-[30px]'>{title}</h2>
         <div className='grid md:hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 justify-between'>
           {
             data?.map(item => {

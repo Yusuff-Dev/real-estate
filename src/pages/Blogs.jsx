@@ -1,6 +1,6 @@
 import React from 'react'
-import PopularArticles from '../components/aboutPage/PopularArticles'
-import Articles from '../components/aboutPage/Articles'
+import PopularArticles from '../components/blogPage/PopularArticles'
+import Articles from '../components/blogPage/Articles'
 
 function Blogs() {
   return (

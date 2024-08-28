@@ -1,6 +1,3 @@
-import Articles from "../components/aboutPage/Articles"
-import PopularArticles from "../components/aboutPage/PopularArticles"
-
 function About() {
   return (
     <div className='container max-w-[1480px]'>

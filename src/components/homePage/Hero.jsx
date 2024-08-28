@@ -33,7 +33,7 @@ function Hero() {
                         return <SwiperSlide key={index}>
                             <div className={`bg-[url('./assets/images/home/hero.webp')] bg-cover bg-no-repeat bg-center darken`}>
                                 <div className='container max-w-[1480px] flex items-end pb-[70px] h-[800px]'>
-                                    <div className='flex flex-col md:max-w-[716px] font-Jost'>
+                                    <div className='flex flex-col items-start md:max-w-[716px] '>
                                         <h1 className='heading-1 font-Jost text-white mb-2 sm:mb-3'>Найдите идеальное место для жизни</h1>
                                         <p className='content text-white/80 mb-[30px] sm:mb-10'>Откройте двери в новое будущее с нами</p>
                                         <BtnBeigie>Подробнее</BtnBeigie>
